@@ -10,7 +10,6 @@ import {
 } from "../../Utils/landing-page-assets/image";
 import Count from "./Count";
 
-
 const Hero = () => {
   return (
     <>
@@ -26,9 +25,9 @@ const Hero = () => {
             will help keep your home insulated to help reduce energy bills.
           </p>
           <div class="box">
-          <img src={boximg} alt="image" class="round-image" />
-          <p class="content">"Best Service We have ever use."</p>
-        </div>
+            <img alt="" src={boximg} class="round-image" />
+            <p class="content">"Best Service We have ever use."</p>
+          </div>
 
           <button type="button" className="land-btn">
             Design Your Door
@@ -38,8 +37,6 @@ const Hero = () => {
           <img src={land_two} alt="worker" />
           <Count value="2500" />
         </div>
-
-        
       </div>
 
       <div className="testi-logos ">
@@ -47,8 +44,6 @@ const Hero = () => {
         <img src={logo_02} alt="logo_02" />
         <img src={logo_03} alt="logo_03" />
       </div>
-
- 
     </>
   );
 };

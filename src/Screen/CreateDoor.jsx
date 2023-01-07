@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import ReactCrop, { convertToPercentCrop } from "react-image-crop";
+import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import Support from "../Component/Support";
 import InstructionBanner from "../Utils/instruction-banner2.png";
 import MobileInstructionBanner from "../Utils/mobile-instruction-banner.png";
-import "./Style.css"
-
+import "./Style.css";
 
 export default function CreateDoor(props) {
   const [uploadfile, setuploadfile] = useState(null);
@@ -27,12 +26,13 @@ export default function CreateDoor(props) {
   const [selection, setselection] = useState(null);
   useEffect(() => {
     if (props.image) {
-      setsingleDoor([props.image])
+      setsingleDoor([props.image]);
     }
-  }, [props.image])
+  }, [props.image]);
 
   return (
-    <div className="mobile-box-2"
+    <div
+      className="mobile-box-2"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -42,22 +42,26 @@ export default function CreateDoor(props) {
     >
       <br />
       <div className="DesktopBanner">
-        <img src={InstructionBanner} alt="BANNER" style={{width:"99%"}}/>
+        <img src={InstructionBanner} alt="BANNER" style={{ width: "99%" }} />
       </div>
 
-      <div className="MobileBanner" >
+      <div className="MobileBanner">
         <img src={MobileInstructionBanner} alt="Mobile  BANNER" />
       </div>
 
-      <div className="mt-4" style={{
-        marginLeft: "5%"
-      }}>
+      <div
+        className="mt-4"
+        style={{
+          marginLeft: "5%",
+        }}
+      >
         {uploadfile ? (
           <div style={{ position: "relative" }}>
             <ReactCrop crop={crop} onChange={(c) => setCrop(c)}>
               <img
                 src={URL.createObjectURL(uploadfile)}
                 style={{ width: "600px", height: "400px", borderRadius: "5px" }}
+                alt=""
               />
             </ReactCrop>
             {selection ? (
@@ -71,6 +75,7 @@ export default function CreateDoor(props) {
                   top: selection.y,
                   left: selection.x,
                 }}
+                alt=""
               />
             ) : null}
           </div>
@@ -85,7 +90,9 @@ export default function CreateDoor(props) {
           />
         )}
       </div>
-      <div><p></p></div>
+      <div>
+        <p></p>
+      </div>
       <div className="mt-2">
         <button
           className="btn btn-danger text-light"
@@ -119,18 +126,24 @@ export default function CreateDoor(props) {
           </button>
         )}
       </div>
-      <div><p></p></div>
+      <div>
+        <p></p>
+      </div>
       <div className="d-flex">
         {singleDoor.map((item, index) => (
           <div
-            className={`card m-2 ${selectedDoor == index && "shadow"}`}
+            className={`card m-2 ${selectedDoor === index && "shadow"}`}
             key={index}
             onClick={() => {
               setselectedDoor(index);
             }}
           >
             <div className="card-body">
-              <img src={item} style={{ width: "90px", height: "140px" }} />
+              <img
+                src={item}
+                style={{ width: "90px", height: "140px" }}
+                alt=""
+              />
             </div>
           </div>
         ))}

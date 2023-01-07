@@ -8,16 +8,13 @@ import {
   service_3,
   service_4,
 } from "../../Utils/landing-page-assets/image";
-import Count from "./count";
 
 const Services = () => {
   return (
     <>
       <div className="services">
         <div className="services-img">
-      
           <img src={services_img} alt="" />
-          
         </div>
 
         <div className="services-content">
