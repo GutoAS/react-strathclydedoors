@@ -1,14 +1,22 @@
-import CreateDoor from "./Screen/CreateDoor";
-import Home from "./Screen/Home";
-import NewLanding from "./Screen/NewLanding";
-import PreDefine from "./Screen/PreDefine";
+// import CreateDoor from "./Screen/CreateDoor";
+// import Home from "./Screen/Home";
+// import NewLanding from "./Screen/NewLanding";
+// import PreDefine from "./Screen/PreDefine";
+// import CustomDoor from "./Screen/CustomDoor";
+// import Contact from "./Screen/Contact";
+// import About from "./Screen/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CustomDoor from "./Screen/CustomDoor";
-import Contact from "./Screen/Contact";
 import Header from "./Component/Header/Header";
-import About from "./Screen/About";
+
 import React from "react";
 import Footer from "./Component/footer/Footer";
+const About = React.lazy(() => import("./Screen/About"));
+const NewLanding = React.lazy(() => import("./Screen/NewLanding"));
+const CreateDoor = React.lazy(() => import("./Screen/CreateDoor"));
+const PreDefine = React.lazy(() => import("./Screen/PreDefine"));
+const CustomDoor = React.lazy(() => import("./Screen/CustomDoor"));
+const Contact = React.lazy(() => import("./Screen/Contact"));
+const Home = React.lazy(() => import("./Screen/Home"));
 
 function App() {
   return (
