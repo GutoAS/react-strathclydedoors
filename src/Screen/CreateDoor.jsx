@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactCrop, { convertToPercentCrop } from "react-image-crop";
+import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import Support from "../Component/Support";
 import InstructionBanner from "../Utils/instruction-banner2.png";
@@ -59,12 +59,14 @@ export default function CreateDoor(props) {
           <div style={{ position: "relative" }}>
             <ReactCrop crop={crop} onChange={(c) => setCrop(c)}>
               <img
+                alt=""
                 src={URL.createObjectURL(uploadfile)}
                 style={{ width: "600px", height: "400px", borderRadius: "5px" }}
               />
             </ReactCrop>
             {selection ? (
               <img
+                alt=""
                 src={singleDoor[selectedDoor]}
                 style={{
                   width: selection.width,
@@ -130,14 +132,18 @@ export default function CreateDoor(props) {
       <div className="d-flex">
         {singleDoor.map((item, index) => (
           <div
-            className={`card m-2 ${selectedDoor == index && "shadow"}`}
+            className={`card m-2 ${selectedDoor === index && "shadow"}`}
             key={index}
             onClick={() => {
               setselectedDoor(index);
             }}
           >
             <div className="card-body">
-              <img src={item} style={{ width: "90px", height: "140px" }} />
+              <img
+                alt=""
+                src={item}
+                style={{ width: "90px", height: "140px" }}
+              />
             </div>
           </div>
         ))}

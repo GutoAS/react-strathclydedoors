@@ -20,7 +20,11 @@ export default function Home() {
               flexDirection: "column",
             }}
           >
-            <img src={"/assets/open-door.png"} style={{ width: "140px" }} />
+            <img
+              alt=""
+              src={"/assets/open-door.png"}
+              style={{ width: "140px" }}
+            />
             <h5>Pre Made Door's</h5>
           </div>
         </div>
@@ -40,7 +44,11 @@ export default function Home() {
               flexDirection: "column",
             }}
           >
-            <img src={"/assets/customize.png"} style={{ width: "120px" }} />
+            <img
+              alt=""
+              src={"/assets/customize.png"}
+              style={{ width: "120px" }}
+            />
             <h5>Make your own</h5>
           </div>
         </div>

@@ -20,7 +20,6 @@ export default function CustomDoor() {
 
   const getImage = () => {
     takeScreenshot(ref.current);
-    // setimage(document.getElementById("screenshot"));
   };
 
   return IMG ? (
@@ -31,7 +30,7 @@ export default function CustomDoor() {
         className="box-mobile"
         style={{
           display: "flex",
-          // padding: "2rem",
+
           justifyContent: "space-evenly",
           alignItems: "center",
           flexWrap: "wrap",
@@ -61,11 +60,13 @@ export default function CustomDoor() {
                 xmlns="http://www.w3.org/1999/xhtml"
               >
                 <img
+                  alt=""
                   style={{ height: "100%", width: "100%" }}
                   src={pattern?.color[doorColor]}
                 />
                 {glazing && pattern.glazing[glazing] && (
                   <img
+                    alt=""
                     style={{
                       zIndex: 99,
                       position: "absolute",
@@ -95,7 +96,7 @@ export default function CustomDoor() {
             <div className="d-flex text-center flex-wrap justify-content-center">
               {Pattern.map((item, index) => (
                 <div
-                  className={`card m-2 ${pattern == item.name && "shadow"}`}
+                  className={`card m-2 ${pattern === item.name && "shadow"}`}
                   key={index}
                   onClick={() => {
                     setpattern(item);
@@ -103,6 +104,7 @@ export default function CustomDoor() {
                 >
                   <div className="card-body">
                     <img
+                      alt=""
                       src={item.img}
                       style={{
                         width: "90px",
@@ -122,7 +124,7 @@ export default function CustomDoor() {
             <div className="d-flex text-center flex-wrap justify-content-center">
               {Object.keys(pattern?.color).map((item, index) => (
                 <div
-                  className={`card m-2 ${doorColor == item && "shadow"}`}
+                  className={`card m-2 ${doorColor === item && "shadow"}`}
                   key={index}
                   onClick={() => {
                     setdoorColor(item);
@@ -137,7 +139,7 @@ export default function CustomDoor() {
                       }}
                     />
                     {DoorColor.map(
-                      (color) => color.color == item && <p>{color.name}</p>
+                      (color) => color.color === item && <p>{color.name}</p>
                     )}
                   </div>
                 </div>
@@ -178,7 +180,7 @@ export default function CustomDoor() {
               <div className="d-flex text-center flex-wrap justify-content-center">
                 {Object.keys(pattern?.glazing).map((item, index) => (
                   <div
-                    className={`card m-2 ${glazing == item && "shadow"}`}
+                    className={`card m-2 ${glazing === item && "shadow"}`}
                     key={index}
                     onClick={() => {
                       setglazing(item);
@@ -186,6 +188,7 @@ export default function CustomDoor() {
                   >
                     <div className="card-body">
                       <img
+                        alt=""
                         src={pattern.glazing[item]}
                         style={{
                           width: "90px",
