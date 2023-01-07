@@ -25,7 +25,7 @@ export default function CustomDoor() {
   return IMG ? (
     <CreateDoor image={IMG} />
   ) : (
-    <>
+    <React.Fragment>
       <div
         className="box-mobile"
         style={{
@@ -224,6 +224,6 @@ export default function CustomDoor() {
         </button>
       </div>
       <Support />
-    </>
+    </React.Fragment>
   );
 }
