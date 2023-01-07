@@ -11,21 +11,22 @@ const Footer = () => {
         <div className="footer-logo">
           <img src={logo} alt="logo" />
           <p className="footer-section-1-p">
-          We do great doors at even better prices, with 5-star Google reviewed customer service.
+            We do great doors at even better prices, with 5-star Google reviewed
+            customer service.
           </p>
         </div>
         <div className="footer-icons">
           <a href="/">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </a>
           <a href="/">
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
           <a href="/">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
           <a href="/">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </div>
       </div>

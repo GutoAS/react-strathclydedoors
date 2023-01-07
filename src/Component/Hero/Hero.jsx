@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
           <div class="box">
             <img alt="" src={boximg} class="round-image" />
-            <p class="content">"Best Service We have ever use."</p>
+            <p className="content">"Best Service We have ever use."</p>
           </div>
 
           <button type="button" className="land-btn">
