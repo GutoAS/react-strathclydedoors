@@ -10,7 +10,9 @@ const Header = () => {
     <>
       <div className="navbar">
         <div className="navbar-logo">
-          <a href="/"><img src={logo}  alt="" /></a>
+          <a href="/">
+            <img src={logo} alt="" />
+          </a>
         </div>
         <div className="navbar-links">
           <ul>
@@ -20,16 +22,18 @@ const Header = () => {
             <a href="/door">
               <li>Design Your Door</li>
             </a>
-            <a href="/About">
+            <a href="">
               <li>About</li>
             </a>
             <a href="/Contact">
               <li>Support</li>
             </a>
           </ul>
-          <button type="button" className="book-btn btns">Book Now</button>
+          <button type="button" className="book-btn btns">
+            Book Now
+          </button>
         </div>
-       
+
         <div className="navbar-smallscreen ">
           <CgMenuRightAlt
             color="#333"
@@ -63,7 +67,6 @@ const Header = () => {
                     <li>Book Now</li>
                   </a>
                 </ul>
-          
               </div>
             </div>
           )}
