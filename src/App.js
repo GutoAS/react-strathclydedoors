@@ -1,10 +1,3 @@
-// import CreateDoor from "./Screen/CreateDoor";
-// import Home from "./Screen/Home";
-// import NewLanding from "./Screen/NewLanding";
-// import PreDefine from "./Screen/PreDefine";
-// import CustomDoor from "./Screen/CustomDoor";
-// import Contact from "./Screen/Contact";
-// import About from "./Screen/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./Component/Header/Header";
 

@@ -22,7 +22,7 @@ const Header = () => {
             <a href="/door">
               <li>Design Your Door</li>
             </a>
-            <a href="">
+            <a href="/About">
               <li>About</li>
             </a>
             <a href="/Contact">
