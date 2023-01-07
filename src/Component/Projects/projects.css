@@ -1,0 +1,81 @@
+.projects {
+
+    padding: 6rem 11rem;
+    background-color: #13334D
+}
+
+.project-p {
+    color: var(--secondry-color);
+}
+
+.project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.project-head h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button button {
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-family: var(--font-family);
+    padding: 1rem 3rem;
+    background: #4f799c;
+    transition: 0.1s ease;
+
+}
+
+.project-button button:hover {
+    background-color: white;
+    color: #4f799c;
+}
+
+@media screen and (max-width: 1150px) {
+    .projects {
+        padding: 6rem 1rem 6rem 3rem;
+    }
+
+}
+
+@media screen and (max-width: 755px) {
+    .project-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projects {
+        padding: 6rem 0.5rem;
+        text-align: center;
+    }
+
+}
+
+.grid img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    grid-gap: 10px;
+}
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-row-8{grid-row: span 8 / auto;}
+
+.span-row-4{grid-row: span 4 / auto;}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Spectral:wght@600&display=swap');
+
+
+:root {
+  --font-family: 'Overpass', sans-serif;
+  
+  --primary-color: #13334D;
+  --secondry-color: #F08661;
+}
+.h1__family{
+  font-family: var(--font-family);
+}
+.section-padding {
+  padding: 4rem 5rem;
+}
+
+.inner-padding {
+  padding: 2rem 6.2rem;
+}
+
+.btns {
+  background: #e6e6e6;
+  border: none;
+  color: #1E5079;
+  padding: 10px 26px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btns:hover {
+  background-color: #1E5079;
+  color: #e6e6e6;
+}
+
+/* menu anim start ---- */
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* menu anim end */
+
+
+
+

@@ -1,0 +1,39 @@
+.action{
+    padding: 6rem 11rem;
+    text-align: center;
+    background: url('./backgroundimg.jpg');
+    object-fit: contain;
+    object-position: center;
+}
+.action-h1{
+    color: white;
+    font-size: 3.5rem;
+}
+.action-p{
+    color: rgb(203, 203, 203);
+}
+.action-button{
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    background: #00ffff24;
+    font-family: var(--font-family);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.action-button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1150px) {
+    .action{
+        padding: 6rem 4rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .action{
+        padding: 6rem 1rem;
+    }
+}
+

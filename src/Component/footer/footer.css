@@ -1,0 +1,151 @@
+.footer {
+
+    padding: 6rem 13rem;
+    background-color: #0A1B29;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .footer{
+        padding: 2rem 4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+@media screen and (max-width:1300px) {
+    .footer{
+        padding: 2rem 3rem;
+    }
+    }
+
+h5 {
+    color: white;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 60px;
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.footer-section-1-p {
+    color: white;
+    padding: 0.5rem 0 ;
+    font-family: var(--font-family);
+    font-size: 17px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .footer-icons{
+        display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+    
+}
+.footer-icons i {
+   
+    padding: 0.5rem 0.9rem;
+    font-size: 20px;
+    color: white;
+
+}
+
+.footer-icons i:hover {
+    color: var(--secondry-color);
+}
+
+
+/* section -2    */
+.footer-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.section-2-links li {
+    color: white;
+    font-size: 16px;
+}
+.footer-section-2-content h4{
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer-section-2 {
+        align-items: flex-start;
+    }
+    .footer-section-2-content h4{
+        font-family: var(--font-family);
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+    }
+    .section-2-links li{
+text-align: center;
+    }
+}
+
+/* section 3  */
+
+.footer-contact-1,
+.footer-contact-2,
+.footer-contact-3 {
+    display: flex;
+
+}
+
+.footer-contact-1 p {
+    padding: 0 0.8rem;
+    color: white;
+}
+
+.footer-contact-2 p {
+    padding: 0 0.8rem;
+    color: white;
+}
+
+.footer-contact-3 p {
+    padding: 0 0.8rem;
+    color: white;
+}
+.footer-section-3-h3{
+    color: white;
+    margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width : 768px) {
+    .footer-section-3-h3{
+        margin: 2rem 0 1rem 0;
+    }
+    
+    .footer-section-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

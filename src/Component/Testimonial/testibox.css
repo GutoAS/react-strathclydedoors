@@ -1,0 +1,26 @@
+.testimonial-cont{
+    text-align: center;
+    padding: 6rem 11rem;
+}
+.testi-box{
+   display: flex;
+}
+.testi-p{
+    color: var(--secondry-color);
+}
+.testi-h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:1150px) {
+    .testimonial-cont{
+        padding: 6rem 1rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .testi-box{
+        flex-direction: column;
+    }
+}

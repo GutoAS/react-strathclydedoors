@@ -1,0 +1,23 @@
+.quality{
+    padding: 6rem 11rem;
+    display: flex;
+    gap: 2rem;
+}
+@media screen and (max-width: 1150px) {
+    .quality{
+        padding: 6rem 1rem 6rem 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .quality{
+        flex-direction: column;
+        padding: 6rem 6rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .quality{
+        padding: 1rem 0;
+    }
+}

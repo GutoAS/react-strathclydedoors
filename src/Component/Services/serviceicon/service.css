@@ -1,0 +1,39 @@
+.service-icon-box{
+    display: flex;
+    
+}
+.icon img{
+    width: 100%;
+    height: auto;
+}
+.icon-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-content h4 {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+.icon-content p {
+    font-size: 0.9rem;
+}
+@media screen and (max-width:600px) {
+    .service-icon-box{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    
+    }
+    .icon img{
+        max-width: 70%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width : 450px) {
+    .service-icon-box{
+        text-align: center;
+    }
+}
