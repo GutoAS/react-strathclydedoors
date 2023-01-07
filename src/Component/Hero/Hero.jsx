@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import "../../Screen/Style.css";
 
 import {
   land_two,
