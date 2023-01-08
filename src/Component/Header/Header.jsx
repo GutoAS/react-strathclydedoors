@@ -16,18 +16,20 @@ const Header = () => {
         </div>
         <div className="navbar-links">
           <ul>
-            <a href="/" aria-current="page">
-              <li>Home</li>
-            </a>
-            <a href="/door">
-              <li>Design Your Door</li>
-            </a>
-            <a href="/About">
-              <li>About</li>
-            </a>
-            <a href="/Contact">
-              <li>Support</li>
-            </a>
+            <li>
+              <a href="/" aria-current="page">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/door">Design Your Door</a>
+            </li>
+            <li>
+              <a href="/About">About</a>
+            </li>
+            <li>
+              <a href="/Contact">Support</a>
+            </li>
           </ul>
           <button type="button" className="book-btn btns">
             Book Now
