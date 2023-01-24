@@ -9,9 +9,9 @@ export default function Home() {
     >
       <div
         class="card"
-        // onClick={() => {
-        //   window.location.href = "/create-door";
-        // }}
+        onClick={() => {
+          window.location.href = "/create-door";
+        }}
       >
         <div class="card-body">
           <div
@@ -53,7 +53,6 @@ export default function Home() {
             <h5>Make your own</h5>
           </div>
         </div>
-        <Link to="/custom-door">Custom door</Link>
       </div>
     </div>
   );
